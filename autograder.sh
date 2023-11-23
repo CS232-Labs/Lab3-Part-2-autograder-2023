@@ -42,7 +42,7 @@ cp ../code_files/* .
 make
 if [ $? -ne 0 ]; then
     cd ..
-    continue
+    exit
 fi
 
 printf "$i" >> ../$results
