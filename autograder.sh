@@ -36,7 +36,6 @@ rm a.out
 cd ..
 
 i=$1
-# i="22b0955@iitb.ac.in"
 echo ==================== Starting $i ====================
 cd $i
 cp ../code_files/* .
