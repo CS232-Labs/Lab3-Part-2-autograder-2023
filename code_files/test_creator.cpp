@@ -10,7 +10,7 @@ using namespace std;
 int main(int argc, char* argv[])
 {
     if(argc != 4){
-        cerr << "Skill issue" << endl;
+        cerr << "Usage: " << argv[0] << "<number of inputs> <probability of insertion> <seed>" << endl;
         exit(-1);
     }
     
@@ -18,7 +18,7 @@ int main(int argc, char* argv[])
     int seed = atoi(argv[3]);
 
     if(p > 1 || p < 0){
-        cerr << "Probability revise crow" << endl;
+        cerr << "Probability must be between 0 and 1" << endl;
         exit(-1);
     }
 
